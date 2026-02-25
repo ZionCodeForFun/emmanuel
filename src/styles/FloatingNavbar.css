@@ -1,0 +1,94 @@
+
+
+@media (max-width:768px) {
+  .floating-nav {
+    position: fixed;
+    top: 1.5rem;
+    transform: translateX(-50%);
+    z-index: 50;
+    left: 15%;
+  }
+}
+@media (min-width:768px) {
+  .floating-nav {
+    position: fixed;
+    top: 1.5rem;
+    transform: translateX(-50%);
+    z-index: 50;
+    left:40%;
+  }
+}
+
+.floating-nav-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+html.dark .floating-nav-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+}
+
+.nav-link {
+  position: relative;
+  color: #5c3a21;
+  transition: color 0.2s;
+}
+
+html.dark .nav-link {
+  color: #d4a574;
+}
+
+.nav-link:hover {
+  color: #8b5a3c;
+}
+
+html.dark .nav-link:hover {
+  color: #f4c89c;
+}
+
+.nav-icon {
+  width: 1.25rem; 
+  height: 1.25rem; 
+}
+
+.nav-hover-bg {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  background-color: rgba(92, 58, 33, 0.1);
+  border-radius: 9999px;
+  filter: blur(2px);
+  opacity: 0;
+  z-index: -10;
+}
+
+html.dark .nav-hover-bg {
+  background-color: rgba(212, 165, 116, 0.1);
+}
+
+.nav-link:hover .nav-hover-bg {
+  opacity: 1;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 1.5rem;
+  background-color: rgba(92, 58, 33, 0.125);
+}
+
+html.dark .nav-divider {
+  background-color: rgba(212, 165, 116, 0.125);
+}

@@ -1,0 +1,10 @@
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #FAF7F4, #F5EBE0, #E8DDD0);
+  transition: background-color 0.5s;
+}
+
+html.dark .app-container {
+  background: linear-gradient(to bottom right, #1A1410, #2D2318, #3D2E20);
+}
