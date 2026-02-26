@@ -15,7 +15,7 @@ export function FloatingNavbar({ isDarkMode, toggleTheme }) {
     {
       icon: FileText,
       label: "Resume",
-      href: "https://drive.google.com/file/d/1JIVVlt_0jKKyd3hYfRi3cGiHpTgq_6eD/view?usp=drivesdk1610DE5FF09CDCEA8DA9ADB07171B1F2AA4FF690Zion resume .pdf",
+      href: "resume.pdf",
     },
     {
       icon: FaFacebookF,
